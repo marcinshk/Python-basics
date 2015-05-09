@@ -1,6 +1,7 @@
 #! python
 
-import sys, json, csv
+import sys, os, json, csv
+
 sys.path.append('./')
 
 import my_own_python_module
