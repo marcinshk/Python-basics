@@ -1,6 +1,6 @@
 #! python
 
-import sys
+import sys, os
 sys.path.append('./')
 
 import my_own_python_module
