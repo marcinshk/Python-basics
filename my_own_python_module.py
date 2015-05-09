@@ -8,4 +8,8 @@ def func2():
     print "This function returns 1"
     return 1
 
+def func3():
+    print "This has been developed on branch: dev_func3. Review and merge to branch dev and to master."
+    return 0
+
 # EOF
