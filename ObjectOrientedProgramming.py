@@ -1,16 +1,26 @@
 #! python
 
 
-class Parent(object):
-  def implicit(self):
-    print "PARENT implicit()"
+class Father(object):
+  def whoami(self):
+    print "Father"
+    
+class Mother(object):
+  def whoami(self):
+    print "Mother"
 
-class Child(Parent):
-  pass
+class Child(Mother, Father):
+  def whoami(self):
+    print "Child"
+  def myparent(self):
+    super(Child,self).whoami()
+    
 
-dad = Parent()
+dad = Father()
+mom = Mother()
 son = Child()
 
-dad.implicit()
-son.implicit()
+son.whoami()
+son.myparent()
+
  
